@@ -3,7 +3,7 @@ import './Hero.css'
 import hand_icon from '../Assets/hand_icon.png'
 import arrow_icon from '../Assets/arrow.png'
 // import hero_image from '../Assets/hero_image.png'
-import heron_image from '../Assets/heron_image.png'
+import hero_img from '../Assets/heron_image.png'
 
 
 const Hero = () => {
@@ -11,25 +11,22 @@ const Hero = () => {
         <div className="hero">
             <div className="hero-left">
                 <h2>NEW ARRIVALS ONLY</h2>
-                <h2>Safdar Ansari</h2>
-            </div>
-            <div>
-                <div className="hero-hand-icon">
-                    <p>new</p>
-                    <img src={hand_icon} alt="" />
+                <div className="hero-left-text">
+                    <div className="hand-new-div">
+                        <p>new</p>
+                        <img src={hand_icon} alt="" className="hand-img"/>
+                    </div>
+                    <p>collections</p>
+                    <p>for everyone</p>
                 </div>
-                {/* <p>collection</p> */}
-                {/* <p>for everyone</p> */}
-            </div>
-            <div className="hero-latest-btn">
-                <div>Latest Collection</div>
-                <img src={arrow_icon} alt="" />
+                <div className="hero-latest-btn">
+                    <div>Latest Collection</div>
+                    <img src={arrow_icon} alt="" className="hero-left-btn-icon"/>
+                </div>
             </div>
             <div className="hero-right">
-                <img src={heron_image} alt="" />
-                {/* <img src={hero_image} alt="" /> */}
+                <img src={hero_img} alt="" className="hero-img"/>
             </div>
-
         </div>
     )
 }
