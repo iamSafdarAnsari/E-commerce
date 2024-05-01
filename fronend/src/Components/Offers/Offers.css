@@ -1,6 +1,6 @@
 .offers {
     /* width: 65%; */
-    height: 90vh;
+    height: 120vh;
     display: flex;
     /* margin: auto; */
     padding: 0px 140px;
@@ -62,7 +62,7 @@
     }
 
     .offers-left p {
-        font-size: 118px;
+        font-size: 40px;
     }
 
     .offers-right img {

@@ -5,7 +5,7 @@
 .hero {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    background: linear-gradient(180deg, #f8c4fc, #faf3f822 60%);
 }
 .hero-left {
     display: flex;
@@ -38,7 +38,7 @@
     width: 12.4rem;
     height: 3rem;
     padding: 0 1rem;
-    background-color: #ff4141;
+    background-color: #febbbb;
     margin-top: 1.3rem;
 }
 .hero-right {
@@ -48,7 +48,7 @@
 }
 .hero-img {
     width: clamp(20rem, 30vw, 50rem);
-    height: clamp(30rem, 40vw, 65rem);
+    height: clamp(40rem, 40vw, 65rem);
 }
 .hero-left-btn-icon {
     width: 1rem;

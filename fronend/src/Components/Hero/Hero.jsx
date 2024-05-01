@@ -4,7 +4,6 @@ import hand_icon from '../Assets/hand_icon.png'
 import arrow_icon from '../Assets/arrow.png'
 // import hero_image from '../Assets/hero_image.png'
 import heron_img from '../Assets/heron_image.png'
-import hero_img from '../Assets/hero_image.png'
 
 
 const Hero = () => {
@@ -27,7 +26,6 @@ const Hero = () => {
             </div>
             <div className="hero-right">
                 <img src={heron_img} alt="" className="hero-img" />
-                <img src={hero_img} alt="" className="hero-img" />
             </div>
         </div>
     )
