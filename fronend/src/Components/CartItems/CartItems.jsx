@@ -4,7 +4,7 @@ import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
 const CartItems = () => {
-    const { getTotalCartAmount, all_product, CartItems, removeFromCart } = useContext(ShopContext);
+    const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
     return (
         <div className='cartitems'>
             <div className="cartitems-format-main">
@@ -18,18 +18,16 @@ const CartItems = () => {
             <hr />
             <div>
 
-                {all_product.map((e) => {
-                    //  console.log("CartItems:", CartItems);
-                    //  console.log("e.id:", e.id);
-                    if (CartItems && CartItems[e.id] > 0) {
+                {all_product.map((product) => {
+                    if (cartItems && cartItems[product.id] > 0) {
                         return <div>
                             <div className="cartitems-format cartitems-format-main">
-                                <img src={e.image} alt="" className='carticon-product-icon' />
-                                <p>{e.name}</p>
-                                <p>${e.new_price}</p>
-                                <button className='cartitems-quantity'>{CartItems[e.id]}</button>
-                                <p>${e.new_price * CartItems[e.id]}</p>
-                                <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeFromCart(e.id) }} alt="" />
+                                <img src={product.image} alt="" className='carticon-product-icon' />
+                                <p>{product.name}</p>
+                                <p>${product.new_price}</p>
+                                <button className='cartitems-quantity'>{cartItems[product.id]}</button>
+                                <p>${product.new_price * cartItems[product.id]}</p>
+                                <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeFromCart(product.id) }} alt="" />
                             </div>
                             <hr />
                         </div>
@@ -42,7 +40,7 @@ const CartItems = () => {
                     <h1>Cart Total</h1>
                     <div>
                         <div className="cartitems-total-item">
-                            <p>Subtatal</p>
+                            <p>Subtotal</p>
                             <p>${getTotalCartAmount()}</p>
                         </div>
                         <hr />
