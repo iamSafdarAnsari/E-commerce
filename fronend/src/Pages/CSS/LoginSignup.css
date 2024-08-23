@@ -1,0 +1,147 @@
+/* .loginsignup {
+    width: 100%;
+    height: 90vh;
+    background: rgb(243, 225, 245);
+    padding-top: 100px;
+}
+
+.loginsignup-container {
+    width: 580px;
+    height: 600px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.loginsignup-container h1 {
+    margin: 20px 0px;
+}
+
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.loginsignup-fields input{
+    height: 65px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+.loginsignup-container button{
+     width: 580px;
+     height: 72px;
+     color: white;
+     background: #ff4141;
+     margin-top: 30px;
+     border: none;
+     font-size: 24px;
+     font-weight: 500;
+     cursor: pointer;
+
+}
+.loginsignup-login{
+    margin-top: 20px;
+    color: #313131;
+    font-size: 22px;
+    font-weight: 500;
+}
+.loginsignup-login span{
+    
+    color: #ff4141;
+    font-weight: 700;
+}
+.loginsignup-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 500;
+} */
+/* NIYASH PRO COPY*/
+:root {
+    --bgcolor: #fce3fe;
+    --btnclr: #ff4141;
+    --greyclr: #5c5c5c;
+}
+
+.loginsignup {
+    background: var(--bgcolor);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 130vh; 
+
+    width: 100%;
+    background: rgb(244, 219, 246);
+    padding-top: 100px;
+}
+.loginsignup-container {
+    width: 40%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 3.8rem 5%;
+}
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.loginsignup-fields input {
+    border-radius:35px;
+    height: 1rem;
+    padding: 1rem;
+    font-size: clamp(0.79rem, 2vw, 0.9rem);
+    border-color:1px #5c5c5c;
+}
+.loginsignup-container h1{
+    font-size: 1.78rem;
+}
+.loginsignup-container > button {
+    height: 2.8rem;
+    background: #ef3d3d;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginsignup-container > button:active{
+    transform: scale(0.97);
+}
+.loginsignup-container > button:disabled{
+    opacity: .5;
+}
+.loginsignup-login,
+.loginsignup-agree {
+    font-size: 0.8rem;
+    color: #5c5c5c;
+}
+.loginsignup-login span {
+    color: #ef3d3d;
+    cursor: pointer;
+}
+.loginsignup-agree {
+    display: flex;
+    gap: 0.7rem;
+}
+.loginsignup-agree input{
+    cursor: pointer;
+}
+@media (max-width:700px){
+    .loginsignup{
+        justify-content: unset;
+        padding: 0 12%;
+    }
+    .loginsignup-container{
+        flex-grow: 1;
+    }
+}
